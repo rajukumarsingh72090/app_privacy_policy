@@ -6,9 +6,9 @@ const apps = [
     {
         id: "edumania",
         name: "Edumania",
-        description: "Privacy policy for the Edumania application. Read about how we securely manage your learning journey data.",
+        description: "View all policies related to Edumania, including Privacy and Account Deletion policies.",
         icon: "🎓",
-        link: "edumania_privacy_policy.html",
+        link: "edumania/index.html",
         color1: "#3b82f6",
         color2: "#2dd4bf"
     }
