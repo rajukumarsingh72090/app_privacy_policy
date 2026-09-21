@@ -116,6 +116,14 @@
         .back-link:hover svg {
             transform: translateX(-5px);
         }
+
+        .contact-box {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
         
         @media (max-width: 768px) {
             .policy-container {
@@ -146,47 +154,63 @@
         
         <article class="policy-container">
             <h1>Privacy Policy for Edumania</h1>
-            <p class="effective-date">Effective Date: March 23, 2026</p>
+            <p class="effective-date">Effective Date: September 21, 2026</p>
 
-            <p>Welcome to <strong>Edumania</strong>. This privacy policy explains how your information is collected, used, and protected when you use the Edumania mobile application (the "Application"), developed by Raju Kumar Singh (the "Service Provider"). This service is provided on an "AS IS" basis.</p>
+            <p>Welcome to <strong>Edumania</strong> ("the Application"). We are dedicated to protecting your privacy and handling your personal data transparently and securely. This Privacy Policy explains how information is collected, processed, and safeguarded when you use the Edumania mobile application developed by <strong>Raju Kumar Singh</strong> ("Service Provider", "we", "our", or "us").</p>
             
-            <h2>Information Collection and Use</h2>
-            <p>The Application collects information when you download and use it. This information may include:</p>
+            <h2>1. Information Collection and Use</h2>
+            <p>To provide an engaging, high-performance learning experience, the Application collects the following categories of information:</p>
             <ul>
-                <li><strong>Personal Information:</strong> When you register an account, we collect your email address, name, and profile information.</li>
-                <li><strong>Payment Information:</strong> If you make purchases within the app, payment information is collected and processed securely by third-party payment gateways (e.g., Razorpay). We do not store your full card or financial details on our servers.</li>
-                <li><strong>Device Information:</strong> Your device's Internet Protocol address (e.g., IP address), device type, operating system version, and similar data.</li>
-                <li><strong>Usage Data:</strong> The pages of the Application that you visit, the time and date of your visit, the time spent on those pages, and other diagnostic data.</li>
+                <li><strong>Account & Profile Information:</strong> When you register an account, we collect your name, email address, and profile details. Passwords are never stored in plain text; they are encrypted using one-way cryptographic salted hashing (bcrypt) and stored securely in our MongoDB Atlas database. Authentication is managed using industry-standard JSON Web Tokens (JWT).</li>
+                <li><strong>In-App Purchases & Billing Information:</strong> Digital course purchases on Android devices are processed directly through <strong>Google Play In-App Billing</strong> in full compliance with Google Play Store Policies. <strong>We do not collect, process, or store your credit/debit card details, bank information, or payment credentials.</strong> All financial transactions are managed exclusively and securely by Google Play. Our backend only records purchase confirmation tokens and order IDs to unlock your purchased content.</li>
+                <li><strong>Course Progress & Learning Analytics:</strong> We store your enrolled courses, lesson completion status, and video playback timestamps to enable seamless cross-device learning and automatic lesson resume.</li>
+                <li><strong>Device & Diagnostic Data:</strong> The Application collects technical metadata such as your device model, operating system version, app version, and crash logs to maintain stability, diagnose errors, and deliver optimized app bundles.</li>
+                <li><strong>Over-The-Air (OTA) Updates:</strong> The Application uses <strong>Expo EAS Update</strong> to deliver silent, instant bug fixes and UI updates. During update checks, minimal runtime metadata (app version and platform) is transmitted to determine if a newer bundle is available.</li>
             </ul>
-            <p>The Application does not gather precise information about the location of your mobile device.</p>
-            <p>The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices, account verification emails, and related communications.</p>
+            <p>The Application <strong>does not</strong> track or request your precise GPS location.</p>
             
-            <h2>Third-Party Services</h2>
-            <p>The Application utilizes third-party services that may collect information used to identify you to facilitate app functionality, authentication, and payments. Below are the links to the privacy policies of third-party service providers used by the Application:</p>
+            <h2>2. Third-Party Services</h2>
+            <p>We work with trusted third-party service providers who assist in operating the Application, processing payments, and hosting course content. Each third-party provider processes data according to their respective privacy policies:</p>
             <ul>
-                <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
-                <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase (Google)</a></li>
-                <li><a href="https://razorpay.com/privacy/" target="_blank" rel="noopener noreferrer">Razorpay</a></li>
-                <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">YouTube (via embedded video content)</a></li>
+                <li><strong>Google Play Services & Google Play Billing:</strong> Powers native in-app course purchases and Android platform services. <br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+                <li><strong>MongoDB Atlas:</strong> Secure cloud database provider used to store user profiles, enrolled courses, and lesson progress. <br><a href="https://www.mongodb.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">MongoDB Privacy Policy</a></li>
+                <li><strong>Expo Application Services (EAS):</strong> Manages Over-The-Air updates and runtime distribution. <br><a href="https://expo.dev/privacy" target="_blank" rel="noopener noreferrer">Expo Privacy Policy</a></li>
+                <li><strong>YouTube API Services:</strong> Delivers video lectures and educational streaming content via embedded players. <br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">YouTube Terms of Service & Google Privacy</a></li>
             </ul>
             
-            <h2>Account and Data Deletion</h2>
-            <p>You can stop all collection of information by the Application easily by uninstalling it. Additionally, you have the right to request the deletion of your account and associated data. You can delete your account directly from within the Application's account settings page, which will securely purge your profile from our Firebase database and authentication systems.</p>
+            <h2>3. Account Deletion and User Rights</h2>
+            <p>You maintain full control over your personal data. You have the right to request the complete deletion of your account and all associated records at any time.</p>
+            <ul>
+                <li><strong>In-App Deletion:</strong> You can delete your account directly inside the app by navigating to <strong>Profile > Settings > Delete Account</strong>. This will permanently purge your user profile, authentication tokens, and progress records from our database.</li>
+                <li><strong>Email Request:</strong> You can also request deletion by emailing us at <a href="mailto:rajukumarsingh72090@gmail.com">rajukumarsingh72090@gmail.com</a> with the subject "Account Deletion Request".</li>
+            </ul>
+            <p>For complete details on deletion timelines and data handling, please review our dedicated <a href="edumania_account_deletion_policy.html">Account Deletion Policy</a>.</p>
             
-            <h2>Data Retention</h2>
-            <p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. Data associated with deleted accounts is removed in accordance with our deletion protocols.</p>
-            
-            <h2>Children's Privacy</h2>
-            <p>These Services do not address anyone under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13. In the case the Service Provider discovers that a child under 13 has provided personal information, the Service Provider will immediately delete this from the servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact the Service Provider so that necessary actions can be taken.</p>
-            
-            <h2>Security</h2>
-            <p>The Service Provider is concerned about safeguarding the confidentiality of your information. We provide physical, electronic, and procedural safeguards to protect the information we process and maintain. All sensitive data (such as passwords) is securely managed via Firebase Authentication.</p>
-            
-            <h2>Changes to This Privacy Policy</h2>
-            <p>This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.</p>
-            
-            <h2>Contact Us</h2>
-            <p>If you have any questions regarding privacy while using the Application, or have questions about our practices, please contact the Service Provider via email.</p>
+            <h2>4. Data Security and Encryption</h2>
+            <p>We employ administrative, technical, and physical safeguards to protect your personal information:</p>
+            <ul>
+                <li>All network communications between the mobile application and our backend server are strictly encrypted using HTTPS/TLS 256-bit encryption.</li>
+                <li>Authentication utilizes JSON Web Tokens (JWT) with secure expiration lifecycles.</li>
+                <li>Account passwords undergo cryptographic salted hashing (bcrypt) before storage.</li>
+                <li>Email verifications and password resets are verified using private, time-limited one-time verification codes (OTP).</li>
+            </ul>
+
+            <h2>5. Data Retention</h2>
+            <p>We retain your personal information only as long as your account is active or as necessary to provide you with educational services. When an account is deleted, your personal profile, learning progress, and credentials are permanently purged. Limited non-identifying transaction records may be retained solely to satisfy legal, tax, or regulatory compliance requirements.</p>
+
+            <h2>6. Children's Privacy</h2>
+            <p>The Application is designed for general audiences and does not knowingly collect personally identifiable information from children under the age of 13. If you believe that a child under 13 has provided us with personal data, please contact us immediately, and we will promptly delete such information from our servers.</p>
+
+            <h2>7. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time to reflect changes in our legal obligations, platform capabilities, or application features. Any modifications will be posted directly on this page with an updated Effective Date. We encourage you to review this Privacy Policy periodically.</p>
+
+            <div class="contact-box">
+                <h2>8. Contact Us</h2>
+                <p>If you have questions, feedback, or privacy concerns regarding this Privacy Policy or our data practices, please reach out to us:</p>
+                <p><strong>Developer:</strong> Raju Kumar Singh</p>
+                <p><strong>Application:</strong> Edumania (com.rajukumarexpo.edumania)</p>
+                <p><strong>Email:</strong> <a href="mailto:rajukumarsingh72090@gmail.com">rajukumarsingh72090@gmail.com</a></p>
+            </div>
         </article>
         
         <footer>

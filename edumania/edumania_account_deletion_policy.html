@@ -50,6 +50,13 @@
             padding-bottom: 0.8rem;
         }
 
+        .policy-container h3 {
+            font-size: 1.3rem;
+            color: var(--accent-color);
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+        }
+
         .policy-container p {
             font-size: 1.1rem;
             color: var(--text-secondary);
@@ -154,51 +161,57 @@
         
         <article class="policy-container">
             <h1>Account Deletion Policy</h1>
-            <p class="effective-date">Effective Date: March 24, 2026</p>
+            <p class="effective-date">Effective Date: September 21, 2026</p>
 
-            <p>At <strong>Edumania</strong>, we respect your right to privacy and data control. This Account Deletion Policy explains how you can request the deletion of your account and the personal data associated with it.</p>
+            <p>At <strong>Edumania</strong>, we believe in user autonomy, privacy, and full data control. In accordance with applicable privacy laws and <strong>Google Play Developer Policies</strong>, this policy details how you can request the permanent deletion of your account and all associated personal records.</p>
             
-            <h2>How to Delete Your Account</h2>
-            <p>You have the right to delete your Edumania account at any time. We provide two convenient methods for you to do so:</p>
+            <h2>1. How to Delete Your Account</h2>
+            <p>You have the absolute right to delete your Edumania account at any time. We provide two easy, accessible methods:</p>
             
-            <h3>Method 1: In-App Deletion (Recommended)</h3>
-            <p>The fastest and most direct way to delete your account is through the Edumania application itself. Follow these steps:</p>
+            <h3>Method 1: In-App Deletion (Immediate & Automated)</h3>
+            <p>The fastest way to delete your account is directly inside the Edumania mobile application:</p>
             <ol>
-                <li>Open the Edumania app on your device.</li>
-                <li>Navigate to your <strong>Profile</strong> or <strong>Account Settings</strong>.</li>
-                <li>Scroll down to find the <strong>Delete Account</strong> option.</li>
-                <li>Tap on it and follow the on-screen prompts to confirm your decision. You may be asked to re-authenticate for security purposes.</li>
+                <li>Open the <strong>Edumania</strong> app on your Android device.</li>
+                <li>Navigate to your <strong>Profile</strong> screen (bottom tab or side menu).</li>
+                <li>Tap on <strong>Settings</strong> or scroll to the <strong>Account Settings</strong> section.</li>
+                <li>Select <strong>Delete Account</strong>.</li>
+                <li>Review the confirmation dialog and tap <strong>Confirm Delete</strong>.</li>
             </ol>
+            <p>Once confirmed, the application sends a secure API request to our server, which immediately and permanently purges your account from our MongoDB Atlas database and revokes your authentication session.</p>
             
-            <h3>Method 2: Email Request</h3>
-            <p>If you are unable to access the app or prefer to request deletion via email, you can do so by contacting our support team.</p>
+            <h3>Method 2: Web / Email Request (If App is Uninstalled)</h3>
+            <p>If you no longer have the app installed or cannot access your device, you can submit a manual deletion request:</p>
             <ol>
-                <li>Send an email to <strong>rajukumarsingh72090@gmail.com</strong> from the email address associated with your Edumania account.</li>
-                <li>Use the subject line: "Account Deletion Request".</li>
-                <li>In the body of the email, state your request to delete your account and associated data.</li>
+                <li>Send an email from your registered email address to: <a href="mailto:rajukumarsingh72090@gmail.com"><strong>rajukumarsingh72090@gmail.com</strong></a>.</li>
+                <li>Use the subject line: <code>Account Deletion Request - Edumania</code>.</li>
+                <li>State clearly in the message body that you wish to permanently delete your Edumania account and all associated data.</li>
             </ol>
-
-            <p><em>Note: For email requests, we may need to verify your identity before proceeding with the deletion to protect your security.</em></p>
+            <p><em>Our support team will process your request and permanently delete your records within <strong>48 to 72 hours</strong>. You will receive an email confirmation once completed.</em></p>
             
-            <h2>What Happens When Your Account is Deleted</h2>
-            <p>Upon receiving and validating your deletion request (or immediately if done via the app), the following actions are taken:</p>
+            <h2>2. What Personal Data is Permanently Deleted</h2>
+            <p>When your account deletion is processed, the following information is permanently purged from our active systems:</p>
             <ul>
-                <li><strong>Personal Data:</strong> Your profile information (name, email, profile picture) is permanently removed from our active databases and Firebase Authentication systems.</li>
-                <li><strong>App Activity:</strong> Your course progress, saved items, and personalized learning data are deleted.</li>
-                <li><strong>Loss of Access:</strong> You will immediately lose access to the account and any active subscriptions or purchased content tied to it. This action cannot be undone.</li>
+                <li><strong>Identity & Profile Data:</strong> Your name, email address, profile photo, and account creation timestamps.</li>
+                <li><strong>Security Credentials:</strong> Encrypted password hashes (bcrypt), one-time verification tokens, and active JWT session keys.</li>
+                <li><strong>Course & Learning Records:</strong> All enrolled courses, lesson progress, video timestamps, and curriculum completion history stored in MongoDB Atlas.</li>
+                <li><strong>Device Tokens & Preferences:</strong> App preferences, theme configurations, and push notification tokens.</li>
             </ul>
+            <p>Once deleted, this data <strong>cannot be recovered</strong>, and you will immediately forfeit access to any previously enrolled course materials.</p>
             
-            <h2>Data Retention Exceptions</h2>
-            <p>While we strive to delete all your personal data, we may retain certain limited information for legal, security, or operational reasons:</p>
+            <h2>3. Data Retention Exceptions</h2>
+            <p>In accordance with Google Play Developer Policies and applicable legal requirements, we may securely retain limited records under the following strict conditions:</p>
             <ul>
-                <li><strong>Transactional Data:</strong> Information regarding past purchases or financial transactions may be securely retained as required by tax and accounting laws.</li>
-                <li><strong>Security Logs:</strong> Anonymized server logs may be temporarily kept for security and fraud prevention purposes before being routinely purged.</li>
+                <li><strong>Financial & Transaction Compliance:</strong> Non-identifying Google Play order IDs and purchase verification tokens may be retained for statutory tax, legal accounting, and dispute reconciliation purposes as required by law.</li>
+                <li><strong>Anonymized Security Logs:</strong> Temporary, fully anonymized server traffic logs may be kept for a maximum of 30 days solely for fraud prevention and system security before automatic deletion.</li>
             </ul>
+            <p>No personal user profile, email, or passwords are kept as part of these compliance records.</p>
             
             <div class="contact-box">
-                <h2>Contact Us</h2>
-                <p>If you have any questions or concerns regarding this Account Deletion Policy or the data deletion process, please contact us at:</p>
-                <p><strong>Email:</strong> rajukumarsingh72090@gmail.com</p>
+                <h2>4. Questions or Assistance</h2>
+                <p>If you have any questions or encounter any issues regarding account deletion, please contact our support team:</p>
+                <p><strong>Developer:</strong> Raju Kumar Singh</p>
+                <p><strong>Application:</strong> Edumania (<code>com.rajukumarexpo.edumania</code>)</p>
+                <p><strong>Email:</strong> <a href="mailto:rajukumarsingh72090@gmail.com">rajukumarsingh72090@gmail.com</a></p>
             </div>
         </article>
         
