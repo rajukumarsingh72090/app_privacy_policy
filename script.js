@@ -4,6 +4,15 @@
  */
 const apps = [
     {
+        id: "pandit_jee_vivah",
+        name: "Pandit Jee Vivah",
+        description: "Official Privacy Policy and Account & Data Deletion Policy for Pandit Jee Vivah Matrimonial platform.",
+        icon: "💍",
+        link: "pandit_jee_vivah/index.html",
+        color1: "#f59e0b",
+        color2: "#d97706"
+    },
+    {
         id: "edumania",
         name: "Edumania",
         description: "View all policies related to Edumania, including Privacy and Account Deletion policies.",

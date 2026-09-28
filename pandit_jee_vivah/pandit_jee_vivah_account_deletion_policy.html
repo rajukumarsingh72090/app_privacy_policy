@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Account Deletion and Data Erasure Policy for Pandit Jee Vivah Application">
+    <title>Account Deletion Policy - Pandit Jee Vivah</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .policy-container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 4rem 3rem;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            margin-top: 1rem;
+            margin-bottom: 4rem;
+            animation: fadeInUp 0.8s ease-out forwards;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .policy-container h1 {
+            font-size: 2.6rem;
+            margin-bottom: 0.5rem;
+            text-align: left;
+            background: linear-gradient(135deg, #ffffff 0%, #fca5a5 50%, #ef4444 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .policy-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .policy-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .badge-app {
+            background: rgba(239, 68, 68, 0.15);
+            color: #f87171;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+
+        .badge-date {
+            background: rgba(56, 189, 248, 0.15);
+            color: #38bdf8;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+        }
+
+        .policy-container h2 {
+            font-size: 1.7rem;
+            color: #f8fafc;
+            margin-top: 2.8rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding-bottom: 0.6rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .policy-container h3 {
+            font-size: 1.25rem;
+            color: #f87171;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .policy-container p {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            line-height: 1.85;
+            margin-bottom: 1.4rem;
+        }
+
+        .policy-container ul, .policy-container ol {
+            margin-bottom: 1.8rem;
+            padding-left: 1.6rem;
+        }
+
+        .policy-container li {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 0.75rem;
+        }
+
+        .policy-container li::marker {
+            color: #ef4444;
+        }
+
+        .policy-container strong {
+            color: #f8fafc;
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: rgba(239, 68, 68, 0.08);
+            border: 1px solid rgba(239, 68, 68, 0.25);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin: 1.8rem 0;
+        }
+
+        .highlight-box.emerald {
+            background: rgba(16, 185, 129, 0.08);
+            border-color: rgba(16, 185, 129, 0.25);
+        }
+
+        .highlight-box.emerald strong {
+            color: #34d399;
+        }
+
+        .step-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 14px;
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .step-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #ef4444;
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-right: 10px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            transition: color 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
+        }
+
+        .back-link svg {
+            width: 18px;
+            height: 18px;
+            margin-right: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .back-link:hover svg {
+            transform: translateX(-4px);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0 2rem;
+            font-size: 0.95rem;
+        }
+
+        .data-table th, .data-table td {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 12px 14px;
+            text-align: left;
+        }
+
+        .data-table th {
+            background: rgba(255, 255, 255, 0.05);
+            color: #f87171;
+            font-weight: 600;
+        }
+
+        .data-table td {
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1" style="background: #ef4444;"></div>
+        <div class="shape shape-2" style="background: #f59e0b;"></div>
+        <div class="shape shape-3" style="background: #8b5cf6;"></div>
+    </div>
+    <div class="container">
+        <div style="width: 100%; max-width: 860px; padding-top: 1rem;">
+            <a href="index.html" class="back-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Pandit Jee Vivah Policies
+            </a>
+        </div>
+
+        <div class="policy-container">
+            <header style="margin-bottom: 2rem; text-align: left; animation: none;">
+                <h1>Account & Data Deletion Policy</h1>
+                <div class="policy-meta">
+                    <span class="policy-badge badge-app">📱 App: Pandit Jee Vivah</span>
+                    <span class="policy-badge badge-app">📦 Package: com.panditjeevivah.app</span>
+                    <span class="policy-badge badge-date">📅 Effective Date: September 28, 2026</span>
+                </div>
+            </header>
+
+            <div class="highlight-box">
+                <p><strong>🗑️ Google Play Store User Data Compliance Notice</strong></p>
+                <p>In accordance with Google Play's Data Safety and Account Deletion policies, <strong>Pandit Jee Vivah</strong> provides a transparent, easy-to-use pathway for all users to request the permanent deletion of their account and all associated personal matrimonial data — both <strong>within the Android app</strong> and <strong>via direct email/web request</strong> for users who have uninstalled the app.</p>
+            </div>
+
+            <h2>1. User's Right to Data Erasure</h2>
+            <p>Every registered user of Pandit Jee Vivah possesses the full right to delete their matrimonial profile and permanently wipe all identifying information, communications, photos, and astrological records at any time. Account deletion is irreversible.</p>
+
+            <h2>2. How to Delete Your Account</h2>
+            <p>We provide two convenient methods for requesting account and data deletion:</p>
+
+            <h3>Method 1: Direct In-App Instant Deletion (Recommended)</h3>
+            <p>If you have the Pandit Jee Vivah app installed on your Android device, you can delete your account instantly using our self-service flow:</p>
+
+            <div class="step-card">
+                <p><span class="step-num">1</span> Launch the <strong>Pandit Jee Vivah</strong> app on your Android device.</p>
+            </div>
+            <div class="step-card">
+                <p><span class="step-num">2</span> Navigate to the <strong>Profile</strong> tab in the bottom navigation bar.</p>
+            </div>
+            <div class="step-card">
+                <p><span class="step-num">3</span> Tap on the <strong>Settings (Gear Icon)</strong> or <strong>"Account & Privacy Settings"</strong>.</p>
+            </div>
+            <div class="step-card">
+                <p><span class="step-num">4</span> Scroll down to the Danger Zone and select <strong>"Delete Account & Wipe Data"</strong>.</p>
+            </div>
+            <div class="step-card">
+                <p><span class="step-num">5</span> Read the confirmation summary detailing the permanent erasure of all matches, messages, and photos.</p>
+            </div>
+            <div class="step-card">
+                <p><span class="step-num">6</span> Confirm your decision by entering your account password or verifying an OTP sent to your registered email via Brevo.</p>
+            </div>
+            <div class="step-card">
+                <p><span class="step-num">7</span> Tap <strong>"Permanently Delete My Account"</strong>. Your account is immediately purged from our servers, your session token is revoked, and you are logged out.</p>
+            </div>
+
+            <h3>Method 2: Web & Email Deletion Request (If App is Uninstalled)</h3>
+            <p>If you have uninstalled the application or cannot access your mobile device, you can submit a manual deletion request by contacting our Data Protection team:</p>
+            <ul>
+                <li><strong>Email Request:</strong> Send an email from your <strong>registered email address</strong> to:
+                    <br><strong style="color: #f87171;"><a href="mailto:rajukumarsingh72090@gmail.com" style="color: #f87171; text-decoration: underline;">rajukumarsingh72090@gmail.com</a></strong>
+                </li>
+                <li><strong>Subject Line:</strong> <code>Account Deletion Request - Pandit Jee Vivah</code></li>
+                <li><strong>Details to Include:</strong>
+                    <ol style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                        <li>Your Full Name</li>
+                        <li>Registered Mobile Number</li>
+                        <li>Matrimony ID (if known, e.g., <code>BBM-XXXXXX</code>)</li>
+                        <li>Reason for deletion (Optional, helps us improve)</li>
+                    </ol>
+                </li>
+                <li><strong>Helpline Assistance:</strong> You may also call our 24x7 Customer Helpline at <strong style="color: #f87171;">+91 7209078494</strong> to initiate identity verification and assist with account deletion.</li>
+            </ul>
+
+            <h2>3. Detailed Breakdown of Deleted Data</h2>
+            <p>When you delete your account, our backend system invokes an atomic purge (<code>authService.deleteUserAccount</code>) across all application database collections. The following data is <strong>permanently deleted</strong>:</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Data Category</th>
+                        <th>Specific Data Purged</th>
+                        <th>Status After Deletion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Authentication & Identity</strong></td>
+                        <td>Full name, email address, password hash, phone number, gender, date of birth, JWT session tokens</td>
+                        <td><span style="color: #f87171; font-weight: 600;">Permanently Deleted</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Matrimonial Profile</strong></td>
+                        <td>Subcaste, Gothram, height, marital status, mother tongue, diet, bio, native place</td>
+                        <td><span style="color: #f87171; font-weight: 600;">Permanently Deleted</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Education & Career</strong></td>
+                        <td>College name, degrees, current employer, job role, annual income range</td>
+                        <td><span style="color: #f87171; font-weight: 600;">Permanently Deleted</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Family Background</strong></td>
+                        <td>Father's and mother's details, siblings count, family values, and economic status</td>
+                        <td><span style="color: #f87171; font-weight: 600;">Permanently Deleted</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Horoscope & Astrological Data</strong></td>
+                        <td>Kundli chart, Rashi, Nakshatra, Manglik status, birth time, and birth place</td>
+                        <td><span style="color: #f87171; font-weight: 600;">Permanently Deleted</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Partner Preferences</strong></td>
+                        <td>All saved criteria (age preference, education, subcaste filters, income expectations)</td>
+                        <td><span style="color: #f87171; font-weight: 600;">Permanently Deleted</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Photographs & Media</strong></td>
+                        <td>All profile pictures, gallery photos, and verification documents deleted from Cloudinary CDN</td>
+                        <td><span style="color: #f87171; font-weight: 600;">Permanently Deleted</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Matches & Connections</strong></td>
+                        <td>Sent/received interest requests, shortlisted candidates, match history</td>
+                        <td><span style="color: #f87171; font-weight: 600;">Permanently Deleted</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Chat & Messages</strong></td>
+                        <td>All direct one-to-one messages and conversation threads</td>
+                        <td><span style="color: #f87171; font-weight: 600;">Permanently Deleted</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>4. Deletion Processing Timeline</h2>
+            <ul>
+                <li><strong>In-App Deletion:</strong> <strong>Immediate (&lt; 1 second)</strong>. Your profile disappears instantly from candidate searches, and all records across database collections are purged in parallel.</li>
+                <li><strong>Email / Helpline Requests:</strong> Processed within <strong>24 to 48 hours</strong> following identity confirmation to prevent fraudulent deletion requests.</li>
+            </ul>
+
+            <h2>5. Data Retention Exceptions & Legal Compliance</h2>
+            <div class="highlight-box emerald">
+                <p><strong>What is NOT retained:</strong> We do NOT retain any personal profile information, photos, astrological Kundlis, or private chat messages once an account is deleted.</p>
+            </div>
+            <p><strong>Statutory Financial Records:</strong> In strict compliance with Indian financial accounting, Goods and Services Tax (GST) regulations, and anti-fraud standards, financial transaction records pertaining to paid membership upgrades (such as Razorpay transaction reference numbers, Google Play purchase receipt tokens, invoice numbers, amounts, and dates) are retained securely for the statutory record-keeping period required by law. These records are isolated, encrypted, and never used for marketing or re-identification purposes.</p>
+
+            <h2>6. Confirmation of Account Deletion</h2>
+            <ul>
+                <li><strong>In-App:</strong> You will receive an immediate on-screen notification: <em>"Your account and all associated matrimonial data have been permanently deleted."</em> You will be redirected to the public login screen.</li>
+                <li><strong>Email Requests:</strong> A final confirmation notice will be dispatched via Brevo to your registered email address confirming complete data erasure.</li>
+            </ul>
+
+            <h2>7. Contact Information for Deletion Inquiries</h2>
+            <p>If you encounter any difficulty deleting your account or have specific data safety questions, please reach out to our dedicated support team:</p>
+            <ul>
+                <li><strong>Developer & Data Controller:</strong> Raju Kumar Singh</li>
+                <li><strong>Application:</strong> Pandit Jee Vivah (com.panditjeevivah.app)</li>
+                <li><strong>Deletion & Privacy Email:</strong> <a href="mailto:rajukumarsingh72090@gmail.com" style="color: #f87171; text-decoration: underline;">rajukumarsingh72090@gmail.com</a></li>
+                <li><strong>24x7 Customer Service Helpline:</strong> <a href="tel:+917209078494" style="color: #f87171; text-decoration: underline;">+91 7209078494</a></li>
+                <li><strong>Billing & Account Support:</strong> <a href="tel:+917542818621" style="color: #f87171; text-decoration: underline;">+91 7542818621</a></li>
+                <li><strong>Country:</strong> India</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Pandit Jee Vivah (Raju Kumar Singh). All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
