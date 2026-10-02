@@ -156,57 +156,62 @@
             <h1>Privacy Policy for Edumania</h1>
             <p class="effective-date">Effective Date: September 21, 2026</p>
 
-            <p>Welcome to <strong>Edumania</strong> ("the Application"). We are dedicated to protecting your privacy and handling your personal data transparently and securely. This Privacy Policy explains how information is collected, processed, and safeguarded when you use the Edumania mobile application developed by <strong>Raju Kumar Singh</strong> ("Service Provider", "we", "our", or "us").</p>
+            <p>Welcome to <strong>Edumania</strong> ("the Application"). We are dedicated to protecting your privacy and handling your personal data transparently and securely. This Privacy Policy explains how information is collected, processed, and safeguarded when you use the Edumania mobile application and its associated website, developed by <strong>Raju Kumar Singh</strong> ("Service Provider", "we", "our", or "us").</p>
             
             <h2>1. Information Collection and Use</h2>
-            <p>To provide an engaging, high-performance learning experience, the Application collects the following categories of information:</p>
+            <p>To provide an engaging, high-performance learning experience, the Application and associated website collect and use the following categories of information:</p>
             <ul>
-                <li><strong>Account & Profile Information:</strong> When you register an account, we collect your name, email address, and profile details. Passwords are never stored in plain text; they are encrypted using one-way cryptographic salted hashing (bcrypt) and stored securely in our MongoDB Atlas database. Authentication is managed using industry-standard JSON Web Tokens (JWT).</li>
-                <li><strong>In-App Purchases & Billing Information:</strong> Digital course purchases on Android devices are processed directly through <strong>Google Play In-App Billing</strong> in full compliance with Google Play Store Policies. <strong>We do not collect, process, or store your credit/debit card details, bank information, or payment credentials.</strong> All financial transactions are managed exclusively and securely by Google Play. Our backend only records purchase confirmation tokens and order IDs to unlock your purchased content.</li>
-                <li><strong>Course Progress & Learning Analytics:</strong> We store your enrolled courses, lesson completion status, and video playback timestamps to enable seamless cross-device learning and automatic lesson resume.</li>
-                <li><strong>Device & Diagnostic Data:</strong> The Application collects technical metadata such as your device model, operating system version, app version, and crash logs to maintain stability, diagnose errors, and deliver optimized app bundles.</li>
-                <li><strong>Over-The-Air (OTA) Updates:</strong> The Application uses <strong>Expo EAS Update</strong> to deliver silent, instant bug fixes and UI updates. During update checks, minimal runtime metadata (app version and platform) is transmitted to determine if a newer bundle is available.</li>
+                <li><strong>Account &amp; Profile Information:</strong> When you register or sign in, we collect your name, email address, and profile details. The mobile application and website use the same Edumania account. Passwords are not stored in plain text; they are stored using one-way salted password hashing (bcrypt) in our MongoDB Atlas database. Authentication is managed using JSON Web Tokens (JWT).</li>
+                <li><strong>Website Checkout &amp; Payment Information:</strong> When you purchase digital courses through our website, checkout is processed using <strong>Razorpay</strong>. Razorpay handles payment credentials such as card, UPI, or banking details through its payment flow. Our systems may receive and store transaction references, order IDs, payment status, amount, and purchase details needed to verify the payment and grant access to the purchased course. We do not intentionally store full card numbers, card security codes, UPI PINs, or online banking passwords on Edumania servers. Please review the <a href="https://razorpay.com/buyer-privacy-notice/" target="_blank" rel="noopener noreferrer">Razorpay Privacy Notice</a>.</li>
+                <li><strong>Course Progress &amp; Learning Analytics:</strong> We store your enrolled courses, lesson completion status, and video playback timestamps to enable seamless learning across devices and automatic lesson resume.</li>
+                <li><strong>Device &amp; Diagnostic Data:</strong> The Application may collect technical metadata such as your device model, operating system version, app version, and crash logs to maintain stability and diagnose errors.</li>
+                <li><strong>Website &amp; Hosting Data:</strong> Our website is hosted on <strong>Vercel</strong>. Website hosting and delivery may involve technical data such as IP address, browser and device information, request logs, and security diagnostics as described in Vercel's <a href="https://vercel.com/legal/privacy-notice" target="_blank" rel="noopener noreferrer">Privacy Notice</a>.</li>
+                <li><strong>Over-The-Air (OTA) Updates:</strong> The Application uses <strong>Expo EAS Update</strong> to deliver app updates. During update checks, runtime metadata such as app version and platform may be transmitted to determine whether a newer bundle is available.</li>
             </ul>
-            <p>The Application <strong>does not</strong> track or request your precise GPS location.</p>
+            <p>The Application does not request or track your precise GPS location.</p>
             
             <h2>2. Third-Party Services</h2>
-            <p>We work with trusted third-party service providers who assist in operating the Application, processing payments, and hosting course content. Each third-party provider processes data according to their respective privacy policies:</p>
+            <p>We use third-party service providers to operate Edumania, host data and website content, process payments, deliver updates, and provide educational content. These providers process information under their own privacy policies and applicable terms:</p>
             <ul>
-                <li><strong>Google Play Services & Google Play Billing:</strong> Powers native in-app course purchases and Android platform services. <br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
-                <li><strong>MongoDB Atlas:</strong> Secure cloud database provider used to store user profiles, enrolled courses, and lesson progress. <br><a href="https://www.mongodb.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">MongoDB Privacy Policy</a></li>
-                <li><strong>Expo Application Services (EAS):</strong> Manages Over-The-Air updates and runtime distribution. <br><a href="https://expo.dev/privacy" target="_blank" rel="noopener noreferrer">Expo Privacy Policy</a></li>
-                <li><strong>YouTube API Services:</strong> Delivers video lectures and educational streaming content via embedded players. <br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">YouTube Terms of Service & Google Privacy</a></li>
+                <li><strong>Razorpay:</strong> Processes payments for website purchases and provides transaction status or references used by our backend to verify orders. <br><a href="https://razorpay.com/buyer-privacy-notice/" target="_blank" rel="noopener noreferrer">Razorpay Privacy Notice</a></li>
+                <li><strong>Vercel:</strong> Hosts and delivers the Edumania website and may process technical request, security, and diagnostic data. <br><a href="https://vercel.com/legal/privacy-notice" target="_blank" rel="noopener noreferrer">Vercel Privacy Notice</a></li>
+                <li><strong>MongoDB Atlas:</strong> Cloud database provider used to store user profiles, enrolled courses, and lesson progress. <br><a href="https://www.mongodb.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">MongoDB Privacy Policy</a></li>
+                <li><strong>Expo Application Services (EAS):</strong> Manages Over-The-Air updates and runtime distribution, if enabled for the Application. <br><a href="https://expo.dev/privacy" target="_blank" rel="noopener noreferrer">Expo Privacy Policy</a></li>
+                <li><strong>YouTube API Services:</strong> Delivers video lectures and educational streaming content through embedded players, if used. <br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> · <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a></li>
+                <li><strong>Google Play Services:</strong> May provide Android platform services. Edumania website purchases are processed through Razorpay, not Google Play Billing.</li>
             </ul>
             
             <h2>3. Account Deletion and User Rights</h2>
-            <p>You maintain full control over your personal data. You have the right to request the complete deletion of your account and all associated records at any time.</p>
+            <p>You may request deletion of your Edumania account and associated personal data. Because the mobile application and website use the same Edumania account, an account deletion request applies to that shared account and its associated learning records, subject to applicable legal retention requirements.</p>
             <ul>
-                <li><strong>In-App Deletion:</strong> You can delete your account directly inside the app by navigating to <strong>Profile > Settings > Delete Account</strong>. This will permanently purge your user profile, authentication tokens, and progress records from our database.</li>
-                <li><strong>Email Request:</strong> You can also request deletion by emailing us at <a href="mailto:rajukumarsingh72090@gmail.com">rajukumarsingh72090@gmail.com</a> with the subject "Account Deletion Request".</li>
+                <li><strong>In-App Deletion:</strong> If available in your app version, navigate to <strong>Profile &gt; Settings &gt; Delete Account</strong> and follow the instructions. This request is intended to delete your account profile, authentication-related records, and learning progress from our active systems, subject to applicable retention requirements.</li>
+                <li><strong>Email Request:</strong> You can also request deletion by emailing <a href="mailto:rajukumarsingh72090@gmail.com">rajukumarsingh72090@gmail.com</a> with the subject "Account Deletion Request". Please use the email address associated with your Edumania account so we can verify the request.</li>
             </ul>
-            <p>For complete details on deletion timelines and data handling, please review our dedicated <a href="edumania_account_deletion_policy.html">Account Deletion Policy</a>.</p>
+            <p>Order, payment, invoice, fraud-prevention, or accounting records may be retained for the period required by applicable law or legitimate recordkeeping obligations, even if your account is deleted. Such retained records will be restricted to the relevant purposes. For complete details, please review our <a href="edumania_account_deletion_policy.html">Account Deletion Policy</a>.</p>
             
             <h2>4. Data Security and Encryption</h2>
-            <p>We employ administrative, technical, and physical safeguards to protect your personal information:</p>
+            <p>We use technical and organizational safeguards designed to protect personal information. These include:</p>
             <ul>
-                <li>All network communications between the mobile application and our backend server are strictly encrypted using HTTPS/TLS 256-bit encryption.</li>
-                <li>Authentication utilizes JSON Web Tokens (JWT) with secure expiration lifecycles.</li>
-                <li>Account passwords undergo cryptographic salted hashing (bcrypt) before storage.</li>
-                <li>Email verifications and password resets are verified using private, time-limited one-time verification codes (OTP).</li>
+                <li>HTTPS/TLS for network communications between the mobile application or website and our backend, where configured.</li>
+                <li>JSON Web Tokens (JWT) with expiration controls for authentication.</li>
+                <li>Salted password hashing using bcrypt before passwords are stored.</li>
+                <li>Time-limited verification codes for email verification and password resets, where these features are enabled.</li>
+                <li>Server-side payment verification using Razorpay's API and payment webhooks. Course access should be granted only after the backend validates the payment status and relevant order details.</li>
             </ul>
+            <p>No method of transmission or electronic storage is completely secure. The specific safeguards depend on the configuration of our application, backend, hosting, and third-party services.</p>
 
             <h2>5. Data Retention</h2>
-            <p>We retain your personal information only as long as your account is active or as necessary to provide you with educational services. When an account is deleted, your personal profile, learning progress, and credentials are permanently purged. Limited non-identifying transaction records may be retained solely to satisfy legal, tax, or regulatory compliance requirements.</p>
+            <p>We retain personal information for as long as needed to provide Edumania services, maintain your account, resolve disputes, prevent fraud, and comply with legal or accounting obligations. When an account is deleted, we delete or de-identify associated profile and learning data from active systems where applicable. Limited order, payment-reference, invoice, and transaction records may be retained for legally required or legitimate accounting, security, and dispute-resolution purposes. Backup copies may persist for a limited period before being overwritten under our backup procedures.</p>
 
             <h2>6. Children's Privacy</h2>
-            <p>The Application is designed for general audiences and does not knowingly collect personally identifiable information from children under the age of 13. If you believe that a child under 13 has provided us with personal data, please contact us immediately, and we will promptly delete such information from our servers.</p>
+            <p>The Application is intended for a general audience and is not knowingly designed to collect personal information from children under the age of 13 without appropriate authorization where required. If you believe a child has provided personal information inappropriately, contact us at the email below so we can review the request and take appropriate action.</p>
 
             <h2>7. Changes to This Privacy Policy</h2>
-            <p>We may update our Privacy Policy from time to time to reflect changes in our legal obligations, platform capabilities, or application features. Any modifications will be posted directly on this page with an updated Effective Date. We encourage you to review this Privacy Policy periodically.</p>
+            <p>We may update this Privacy Policy to reflect changes to our services, data practices, or legal obligations. Updates will be posted on this page with a revised Effective Date. We encourage you to review this policy periodically.</p>
 
             <div class="contact-box">
                 <h2>8. Contact Us</h2>
-                <p>If you have questions, feedback, or privacy concerns regarding this Privacy Policy or our data practices, please reach out to us:</p>
+                <p>If you have questions, feedback, or privacy concerns regarding this Privacy Policy or our data practices, contact us:</p>
                 <p><strong>Developer:</strong> Raju Kumar Singh</p>
                 <p><strong>Application:</strong> Edumania (com.rajukumarexpo.edumania)</p>
                 <p><strong>Email:</strong> <a href="mailto:rajukumarsingh72090@gmail.com">rajukumarsingh72090@gmail.com</a></p>
